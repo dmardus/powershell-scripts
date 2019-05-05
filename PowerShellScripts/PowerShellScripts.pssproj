@@ -30,18 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BackupOctopusDatabase.ps1" />
-    <Compile Include="CheckAndStartStoppedCMSServices.ps1" />
-    <Compile Include="CheckAndStartStoppedOctopusServices.ps1" />
+    <Compile Include="BackupSQLServerDatabase.ps1" />
+    <Compile Include="CheckAndStartStoppedServices.ps1" />
+    <Compile Include="CheckAvailableDiskSpaceAndSendMail.ps1" />
+    <Compile Include="CheckServices.ps1" />
     <Compile Include="GetHostNameByIP.ps1" />
-    <Compile Include="SendMailmessage.ps1" />
-    <Compile Include="CheckAvailableDiskSpaceBuildServer.ps1" />
-    <Compile Include="CheckAvailableDiskSpaceSqlServer.ps1" />
-    <Compile Include="CheckCMSServices.ps1" />
-    <Compile Include="ForWorkAutoTests.ps1" />
-    <Compile Include="ForWorkTests.ps1" />
     <Compile Include="Hangfire_netsh.ps1" />
-    <Compile Include="ScheduledSnapshotRC-TFS.ps1" />
+    <Compile Include="RestartAllVMsAfterRestart.ps1" />
+    <Compile Include="ScheduledSnapshot.ps1" />
+    <Compile Include="SendMailMessage.ps1" />
+    <Compile Include="WorkWithHyper-V.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
