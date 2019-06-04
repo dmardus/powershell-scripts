@@ -2,11 +2,11 @@
 . .\Functions\Get-Uptime.ps1
 . .\Functions\Write-Log.ps1
 
-$msgMachineType = 'Machine Type: {0}' -f (Get-MachineType -ComputerName DMNUC-PC).Type
+$msgMachineType = 'Machine Type: {0}' -f (Get-MachineType -ComputerName PC-NAME).Type
 
 Write-Log -Message $msgMachineType -Path .\Logs\GetCompInfoToLog.log -Level Info
 
-$upTimeRes = Get-Uptime -ComputerName DMNUC-PC
+$upTimeRes = Get-Uptime -ComputerName PC-NAME
 
 $msgBootTime = 'BootTime: {0}' -f $upTimeRes.BootTime
 
